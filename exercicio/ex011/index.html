@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídis em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivo diferente ou simplesmente aumente e diminua o tamnho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" typy="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em html5.</p>
+    <audio src="midia/year-ago.mp3" controls loop></audio>
+    <!--mp3- wag -ogg-->
+    <audio controls loop> 
+        <source src="midia/Bite-me.mp3" type="audio/mpeg">
+        <source src="midia/Bite-me.mp3" type="audio/ogg">
+        <source src="midia/Bite-me.mp3" type="audio/wav"> <!--e muito pesado recomendar não usar-->
+        <p>Infelizmente seu navegador não consegur reproduzir áudio.
+            <a href="midia/Bite-me.mp3">clique aqui para baixar o arquivo mp3.</a> </p>
+        </audio>
+</body>
+
+</html>
